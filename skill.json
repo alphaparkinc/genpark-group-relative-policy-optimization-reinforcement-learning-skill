@@ -1,0 +1,38 @@
+{
+  "name": "genpark-group-relative-policy-optimization-reinforcement-learning-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Group Relative Policy Optimization (GRPO) reinforcement learning engine eliminating value critic models via group score baselines.",
+  "author": "genpark",
+  "category": "reinforcement-learning",
+  "tags": [
+    "grpo",
+    "deepseek-r1",
+    "reinforcement-learning",
+    "critic-free-rl",
+    "mathematical-reasoning"
+  ],
+  "inputs": {
+    "sampled_group_size": {
+      "type": "integer"
+    },
+    "baseline_reward_mean": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "grpo_update_id": {
+      "type": "string"
+    },
+    "critic_model_bypassed": {
+      "type": "boolean"
+    },
+    "relative_advantage_gain": {
+      "type": "number"
+    },
+    "policy_entropy_stabilized": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
